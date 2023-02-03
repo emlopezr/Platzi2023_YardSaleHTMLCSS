@@ -1,140 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Yard Sale</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+        <title>Yard Sale</title>
 
-    <link rel="shortcut icon" href="img/logos/favicon_yard_sale.svg" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
 
-    <style>
-        .login {
-            width: 100%;
-            height: 100vh;
-            display: grid;
-            place-items: center;
-        }
+        <link
+            rel="shortcut icon"
+            href="img/logos/favicon_yard_sale.svg"
+            type="image/x-icon"
+        />
 
-        .form-container {
-            width: 360px;
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-        }
+        <style>
+            .login {
+                width: 100%;
+                height: 100vh;
+                display: grid;
+                place-items: center;
+            }
 
-        .logo-link {
-            justify-self: center;
-        }
+            .form-container {
+                width: 360px;
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+            }
 
-        .logo {
-            width: 200px;
-            margin-bottom: 32px;
-        }
+            .logo-link {
+                justify-self: center;
+            }
 
-        .form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .label {
-            font-size: var(--sm);
-            font-weight: bold;
-            margin-bottom: 4px;
-        }
-
-        .input {
-            background-color: var(--text-input-field);
-            border: none;
-            border-radius: 8px;
-            height: 32px;
-            font-size: var(--md);
-            padding: 6px;
-            margin-bottom: 12px;
-        }
-
-        .primary-button {
-            background-color: var(--hospital-green);
-            border-radius: 8px;
-            border: none;
-            color: var(--white);
-            padding: 6px;
-            height: 52px;
-            width: 100%;
-            cursor: pointer;
-            font-size: var(--md);
-            font-weight: bold;
-            margin-top: 16px;
-        }
-
-        .secondary-button {
-            background-color: var(--white);
-            border: 2px solid var(--hospital-green);
-            color: var(--hospital-green);
-            border-radius: 8px;
-            padding: 6px;
-            height: 52px;
-            width: 100%;
-            cursor: pointer;
-            font-size: var(--md);
-            font-weight: bold;
-            margin-top: 16px;
-        }
-
-        .forgot-password {
-            font-size: var(--sm);
-            color: var(--hospital-green);
-            text-align: center;
-            text-decoration: none;
-            margin: 16px 0;
-        }
-
-        .signup-button {
-            margin-top: 32px;
-            position: absolute;
-            bottom: 0;
-            margin-bottom: 24px;
-            width: inherit;
-        }
-        
-        @media screen and (min-width: 640px) {
             .logo {
-                display: none;
+                width: 200px;
+                margin-bottom: 32px;
             }
-            
+
+            .form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .label {
+                font-size: var(--sm);
+                font-weight: bold;
+                margin-bottom: 4px;
+            }
+
+            .input {
+                background-color: var(--text-input-field);
+                border: none;
+                border-radius: 8px;
+                height: 32px;
+                font-size: var(--md);
+                padding: 6px;
+                margin-bottom: 12px;
+            }
+
+            .primary-button {
+                background-color: var(--hospital-green);
+                border-radius: 8px;
+                border: none;
+                color: var(--white);
+                padding: 6px;
+                height: 52px;
+                width: 100%;
+                cursor: pointer;
+                font-size: var(--md);
+                font-weight: bold;
+                margin-top: 16px;
+            }
+
+            .secondary-button {
+                background-color: var(--white);
+                border: 2px solid var(--hospital-green);
+                color: var(--hospital-green);
+                border-radius: 8px;
+                padding: 6px;
+                height: 52px;
+                width: 100%;
+                cursor: pointer;
+                font-size: var(--md);
+                font-weight: bold;
+                margin-top: 16px;
+            }
+
+            .forgot-password {
+                font-size: var(--sm);
+                color: var(--hospital-green);
+                text-align: center;
+                text-decoration: none;
+                margin: 16px 0;
+            }
+
             .signup-button {
-                position: relative;
+                margin-top: 32px;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 24px;
+                width: inherit;
             }
-        }
 
-    </style>
+            @media screen and (min-width: 640px) {
+                .logo {
+                    display: none;
+                }
 
-</head>
-<body>
-    <div class="login">
-        <div class="form-container">
-            <a href="/" class="logo-link">
-                <img src="img/logos/logo_yard_sale.svg" alt="Logo" class="logo">
-            </a>
+                .signup-button {
+                    position: relative;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login">
+            <div class="form-container">
+                <a href="index.html" class="logo-link">
+                    <img
+                        src="img/logos/logo_yard_sale.svg"
+                        alt="Logo"
+                        class="logo"
+                    />
+                </a>
 
-            <form action="/" class="form">
-                <label for="email" class="label">Email address</label>
-                <input type="email" id="email" placeholder="example@yardsale.com" class="input input-email">
+                <form action="/" class="form">
+                    <label for="email" class="label">Email address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="example@yardsale.com"
+                        class="input input-email"
+                    />
 
-                <label for="password" class="label">Password</label>
-                <input type="password" id="password" placeholder="********" class="input input-password">
+                    <label for="password" class="label">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="********"
+                        class="input input-password"
+                    />
 
-                <input type="submit" value="Log in" class="primary-button login-button">
-            </form>
+                    <input
+                        type="submit"
+                        value="Log in"
+                        class="primary-button login-button"
+                    />
+                </form>
 
-            <a href="/" class="forgot-password">Forgot my password</a>
+                <a href="index.html" class="forgot-password"
+                    >Forgot my password</a
+                >
 
-            <button class="secondary-button signup-button">Sign up</button>
+                <button class="secondary-button signup-button">Sign up</button>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

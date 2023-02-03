@@ -1,102 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Yard Sale</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+        <title>Yard Sale</title>
 
-    <link rel="shortcut icon" href="img/logos/favicon_yard_sale.svg" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
 
-    <style>
-        .container {
-            width: 100%;
-            height: 100vh;
-            display: grid;
-            place-items: center;
-        }
+        <link
+            rel="shortcut icon"
+            href="img/logos/favicon_yard_sale.svg"
+            type="image/x-icon"
+        />
 
-        .index-container {
-            width: 360px;
-            display: grid;
-            grid-template-rows: auto 1fr auto;
-        }
+        <style>
+            .container {
+                width: 100%;
+                height: 100vh;
+                display: grid;
+                place-items: center;
+            }
 
-        .logo-link {
-            justify-self: center;
-        }
+            .index-container {
+                width: 360px;
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+            }
 
-        .logo {
-            width: 200px;
-            margin-bottom: 32px;
-        }
+            .logo-link {
+                justify-self: center;
+            }
 
-        .title  {
-            font-size: var(--lg);
-            margin-bottom: 6px;
-            text-align: center;
-        }
+            .logo {
+                width: 200px;
+                margin-bottom: 32px;
+            }
 
-        .page-link {
-            text-decoration: none;
-            color: var(--hospital-green);
-            font-weight: bold;
-        }
+            .title {
+                font-size: var(--lg);
+                margin-bottom: 6px;
+                text-align: center;
+            }
 
+            .page-link {
+                text-decoration: none;
+                color: var(--hospital-green);
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="index-container">
+                <a href="index.html" class="logo-link">
+                    <img
+                        src="img/logos/logo_yard_sale.svg"
+                        alt="Logo"
+                        class="logo"
+                    />
+                </a>
 
-    </style>
+                <h1 class="title">Pages</h1>
 
-</head>
-<body>
-    <div class="container">
-        <div class="index-container">
-            <a href="/" class="logo-link">
-                <img src="img/logos/logo_yard_sale.svg" alt="Logo" class="logo">
-            </a>
-    
-            <h1 class="title">Pages</h1>
-    
-            <ul class="list">
-    
-                <li class="list-item">
-                    <a href="create-pass.html" class="page-link">Create new password</a>
-                </li>
-    
-                <li class="list-item">
-                    <a href="email-sent.html" class="page-link">Email has been sent</a>
-                </li>
-    
-                <li class="list-item">
-                    <a href="login.html" class="page-link">Log in / Sign up</a>
-                </li>
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="create-pass.html" class="page-link"
+                            >Create new password</a
+                        >
+                    </li>
 
-                <li class="list-item">
-                    <a href="my-account-create.html" class="page-link">Create account</a>
-                </li>
+                    <li class="list-item">
+                        <a href="email-sent.html" class="page-link"
+                            >Email has been sent</a
+                        >
+                    </li>
 
-                <li class="list-item">
-                    <a href="my-account-edit.html" class="page-link">Edit account</a>
-                </li>
+                    <li class="list-item">
+                        <a href="login.html" class="page-link"
+                            >Log in / Sign up</a
+                        >
+                    </li>
 
-                <li class="list-item">
-                    <a href="main-page.html" class="page-link">Main page</a>
-                </li>
+                    <li class="list-item">
+                        <a href="my-account-create.html" class="page-link"
+                            >Create account</a
+                        >
+                    </li>
 
-                <li class="list-item">
-                    <a href="desktop-menu.html" class="page-link">Desktop menu</a>
-                </li>
+                    <li class="list-item">
+                        <a href="my-account-edit.html" class="page-link"
+                            >Edit account</a
+                        >
+                    </li>
 
-                <li class="list-item">
-                    <a href="mobile-menu.html" class="page-link">Mobile menu</a>
-                </li>
-    
-            </ul>
+                    <li class="list-item">
+                        <a href="main-page.html" class="page-link">Main page</a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href="desktop-menu.html" class="page-link"
+                            >Desktop menu</a
+                        >
+                    </li>
+
+                    <li class="list-item">
+                        <a href="mobile-menu.html" class="page-link"
+                            >Mobile menu</a
+                        >
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
