@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Yard Sale</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="shortcut icon" href="img/logos/favicon_yard_sale.svg" type="image/x-icon" />
+
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            padding: 24px 48px;
+            justify-content: space-between;
+
+            -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        a {
+            text-decoration: none;
+            color: var(--very-light-pink);
+            padding: 8px 16px;
+            margin: 0 16px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: var(--hospital-green);
+            border: 1px solid var(--hospital-green);
+            border-radius: 12px;
+            padding: 8px 15px;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .logo {
+            width: 150px;
+            margin-right: 32px;
+        }
+
+        .nav-left,
+        .nav-right {
+            display: flex;
+        }
+
+        .nav-left ul,
+        .nav-right ul {
+            margin: 0 24px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-email {
+            margin: 0 32px;
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+        }
+
+        .nav-cart {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .nav-cart div {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: var(--hospital-green);
+            border-radius: 50%;
+            text-align: center;
+            color: var(--white);
+            width: 20px;
+            height: 20px;
+            font-size: var(--sm);
+            font-weight: bold;
+        }
+
+        @media screen and (max-width:1280px){
+            .menu {
+                display: block;
+                cursor: pointer;
+            }
+
+            .nav-left ul {
+                display: none;
+            }
+
+            .nav-email{
+                display: none;
+            }
+
+            .logo {
+                margin: 0;
+            }
+
+            .nav-right ul {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="img/icons/icon_menu.svg" alt="Icon menu" class="menu">
+
+        <div class="nav-left">
+            <img src="img/logos/logo_yard_sale.svg" alt="Logo" class="logo">
+
+            <ul>
+                <li><a href="index.html">All</a></li>
+                <li><a href="index.html">Clothes</a></li>
+                <li><a href="index.html">Electronics</a></li>
+                <li><a href="index.html">Furnitures</a></li>
+                <li><a href="index.html">Toys</a></li>
+                <li><a href="index.html">Others</a></li>
+            </ul>
+
+        </div>
+
+        <div class="nav-right">
+
+            <ul>
+                <li class="nav-email">example@yardsale.com</li>
+                <li class="nav-cart">
+                    <img src="img/icons/icon_shopping_cart.svg" alt="">
+                    <div>3</div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+</body>
+
+</html>
